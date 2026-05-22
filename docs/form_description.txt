@@ -1,0 +1,22 @@
+GovernanceOS — Multi-agent DAO governance intelligence and strategy platform.
+
+Core pain point: DAO governance moves fast. Missing a single proposal can cost millions in treasury misallocation.
+
+Architecture: 6-agent pipeline orchestrated by governance coordinator:
+1. Proposal Scanner — monitors 50+ DAOs across 10 chains (Ethereum, Arbitrum, Optimism, Polygon, Base, Solana)
+2. Sentiment Analyzer — NLP analysis of community discussions across forums, Discord, Twitter
+3. Voting Strategist — game-theory-based optimal voting strategy calculation
+4. Impact Modeler — simulates proposal outcomes, treasury impact, protocol state changes
+5. Report Generator — creates comprehensive governance briefings with risk assessment
+6. Alert Dispatcher — real-time Telegram/X alerts for high-impact proposals
+
+Technical highlights:
+- Multi-chain governance monitoring with unified data model
+- Game theory voting optimization with whale tracking
+- Continuous 24/7 monitoring with intelligent deduplication
+
+Token consumption: ~12M tokens/day — continuous DAO monitoring across 10 chains, deep sentiment analysis, multi-scenario outcome simulation.
+
+Proof: github.com/ucell17/governance-os (3500+ lines Python), 25+ tests
+
+Built with: Hermes Agent, Claude Code, powered by MiMo + Claude series
