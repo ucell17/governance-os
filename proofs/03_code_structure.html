@@ -1,0 +1,47 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}body{background:#0a0e17;color:#e0e0e0;font-family:'Segoe UI',sans-serif;padding:40px}
+h1{color:#a855f7;font-size:1.8em;margin-bottom:20px}
+.tree{background:#1a2035;padding:20px;border-radius:12px;font-family:'Courier New',monospace;font-size:0.9em;line-height:1.8}
+.dir{color:#a855f7}.file{color:#aaa}.test{color:#00ff88}.comment{color:#666}
+.stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:20px 0}
+.s{background:#1a2035;padding:16px;border-radius:12px;text-align:center}
+.s-val{font-size:1.8em;color:#a855f7;font-weight:700}.s-lbl{color:#888;font-size:0.8em}
+</style></head><body>
+<h1>📁 Code Structure — GovernanceOS</h1>
+<div class="stats-row">
+<div class="s"><div class="s-val">3,578</div><div class="s-lbl">Lines of Python</div></div>
+<div class="s"><div class="s-val">33</div><div class="s-lbl">Source Files</div></div>
+<div class="s"><div class="s-val">25+</div><div class="s-lbl">Tests Passing</div></div>
+</div>
+<div class="tree">
+<span class="dir">governance-os/</span><br>
+├── <span class="dir">src/</span><br>
+│   ├── <span class="dir">agents/</span><br>
+│   │   ├── <span class="file">base_agent.py</span><br>
+│   │   ├── <span class="file">proposal_scanner.py</span> <span class="comment"># Multi-chain proposal monitoring</span><br>
+│   │   ├── <span class="file">sentiment_analyzer.py</span> <span class="comment"># NLP sentiment analysis</span><br>
+│   │   ├── <span class="file">voting_strategist.py</span> <span class="comment"># Game theory voting</span><br>
+│   │   ├── <span class="file">impact_modeler.py</span> <span class="comment"># Treasury impact simulation</span><br>
+│   │   ├── <span class="file">report_generator.py</span> <span class="comment"># Governance briefings</span><br>
+│   │   └── <span class="file">alert_dispatcher.py</span> <span class="comment"># Real-time alerts</span><br>
+│   ├── <span class="dir">connectors/</span><br>
+│   │   ├── <span class="file">snapshot.py</span> <span class="comment"># Snapshot.org API</span><br>
+│   │   ├── <span class="file">tally.py</span> <span class="comment"># Tally.xyz API</span><br>
+│   │   └── <span class="file">on_chain.py</span> <span class="comment"># On-chain governance</span><br>
+│   ├── <span class="dir">models/</span><br>
+│   │   ├── <span class="file">dao.py</span> <span class="comment"># DAO, Proposal, Vote models</span><br>
+│   │   └── <span class="file">alert.py</span> <span class="comment"># Alert, AlertRule models</span><br>
+│   ├── <span class="file">orchestrator.py</span><br>
+│   └── <span class="file">main.py</span><br>
+├── <span class="dir">tests/</span><br>
+│   ├── <span class="test">test_proposal_scanner.py</span><br>
+│   ├── <span class="test">test_sentiment_analyzer.py</span><br>
+│   ├── <span class="test">test_voting_strategist.py</span><br>
+│   ├── <span class="test">test_impact_modeler.py</span><br>
+│   ├── <span class="test">test_report_generator.py</span><br>
+│   ├── <span class="test">test_alert_dispatcher.py</span><br>
+│   └── <span class="test">test_orchestrator.py</span><br>
+├── <span class="file">README.md</span><br>
+└── <span class="file">requirements.txt</span>
+</div>
+</body></html>
